@@ -17,7 +17,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.fasterxml.jackson.dataformat.xml.XmlMapper;
 
 @RestController 
-@RequestMapping("ZYF/wexin/reciver") 
+@RequestMapping("/ZYF/wexin/reciver") 
 public class MessageReceiverController {
 	@Autowired
 	private MessageService messageService;
