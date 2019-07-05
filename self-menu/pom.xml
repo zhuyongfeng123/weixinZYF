@@ -97,8 +97,8 @@
 
 				<!-- 配置下面的参数，可以使用 mvn spring-boot:start 方式运行 -->
 				<!-- 而停止的是，直接以 mvn spring-boot:stop 方式停止，不需要再查进程 -->
+				
 				<configuration>
-						        <mainClass>org.fkjava.weixin.WeixinApplication</mainClass>
 				
 					<executable>true</executable>
 					<fork>true</fork>

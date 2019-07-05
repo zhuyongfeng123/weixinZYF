@@ -84,11 +84,11 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
-              
+
 				<!-- 配置下面的参数，可以使用 mvn spring-boot:start 方式运行 -->
 				<!-- 而停止的是，直接以 mvn spring-boot:stop 方式停止，不需要再查进程 -->
 				<configuration>
-		        <mainClass>org.fkjava.weixin.WeixinApplication</mainClass>
+				 <mainClass>org.fkjava.weixin.WeixinApplication</mainClass>
 					<executable>true</executable>
 					<fork>true</fork>
 					<!-- 指定MBean端口，默认9001，每个程序使用一个端口号 -->
