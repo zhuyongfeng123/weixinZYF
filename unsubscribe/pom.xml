@@ -85,7 +85,10 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+				
 				<configuration>
+				 <mainClass>com.xx.webapps.api.main.WebappsApiBidMain</mainClass>
+				
 					<executable>true</executable>
 					<fork>true</fork>
 					<!-- JMX的端口不能重复 -->
