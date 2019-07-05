@@ -87,7 +87,7 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
 				
 				<configuration>
-				 <mainClass>com.xx.webapps.api.main.WebappsApiBidMain</mainClass>
+		        <mainClass>org.fkjava.weixin.WeixinApplication</mainClass>
 				
 					<executable>true</executable>
 					<fork>true</fork>

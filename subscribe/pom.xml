@@ -86,6 +86,8 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 				<configuration>
+						        <mainClass>org.fkjava.weixin.WeixinApplication</mainClass>
+				
 					<executable>true</executable>
 					<fork>true</fork>
 					<!-- JMX的端口不能重复 -->
