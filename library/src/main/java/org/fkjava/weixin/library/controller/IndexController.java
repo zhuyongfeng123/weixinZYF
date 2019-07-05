@@ -17,17 +17,13 @@ public class IndexController {
 	private LibraryService libraryService;
 
 	@RequestMapping
-	public String index(//
-			// 搜索的关键字
+	public String index(
 			@RequestParam(name = "keyword", required = false) String keyword,
-			// 分页的页码，Spring Data里面建议从0开始的，所以默认值是0
-			@RequestParam(name = "pageNumber", defaultValue = "0") int pageNumber, //
-			Model model//
+			@RequestParam(name = "pageNumber", defaultValue = "0") int pageNumber, 
+			Model model
 	) {
 
 		Page<Book> page = this.libraryService.search(keyword, pageNumber);
-
-		// 把数据传递到页面
 		model.addAttribute("page", page);
 
 		return "/WEB-INF/views/library/index.jsp";

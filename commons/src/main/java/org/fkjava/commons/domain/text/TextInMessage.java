@@ -9,13 +9,9 @@ import org.fkjava.commons.domain.InMessage;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-@XmlRootElement(name = "xml") // 指定XML的根元素名称
-@XmlAccessorType(XmlAccessType.FIELD) // 指定属性的访问方式为字段
+@XmlRootElement(name = "xml") 
+@XmlAccessorType(XmlAccessType.FIELD) 
 public class TextInMessage extends InMessage {
-
-	/**
-	 * 
-	 */
 	private static final long serialVersionUID = 1L;
 	@XmlElement(name = "Content")
 	@JsonProperty("Content")
