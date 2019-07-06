@@ -23,13 +23,11 @@ public class MessageServiceImpl implements MessageService {
 
 	
 		try {
-			inMessageTemplate.convertAndSend("kemao_3_" + msg.getMsgType(), msg);
+			inMessageTemplate.convertAndSend("ZYF_" + msg.getMsgType(), msg);
 		} catch (Exception e) {
 			LOG.error("把转换的消息放入队列中出现问题：" + e.getLocalizedMessage(), e);
 		}
-
 		LOG.trace("转换后的消息对象已经放入队列中");
-	
 		return null;
 	}
 }
