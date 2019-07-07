@@ -9,4 +9,4 @@ spring:
       show-sql: true
    redis:
       host: 120.79.131.175
-      database: 0
+      database: 16

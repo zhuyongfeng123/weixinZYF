@@ -6,6 +6,6 @@ spring:
    redis:
       host: 120.79.131.175
       port: 6379
-      database: 0
+      database: 16
 
 server.port: 8093
