@@ -1,8 +1,8 @@
-package org.fkjava.weixin.controller;
+package org.ZYFjava.weixin.controller;
 
+import org.ZYFjava.weixin.service.MessageService;
+import org.ZYFjava.weixin.service.MessageTypeRegister;
 import org.fkjava.commons.domain.InMessage;
-import org.fkjava.weixin.service.MessageService;
-import org.fkjava.weixin.service.MessageTypeRegister;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;

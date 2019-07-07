@@ -1,4 +1,4 @@
-package org.fkjava.weixin;
+package org.ZYFjava.weixin;
 
 import org.fkjava.commons.EventListenerConfig;
 import org.fkjava.commons.domain.InMessage;

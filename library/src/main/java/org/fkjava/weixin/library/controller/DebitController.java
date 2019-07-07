@@ -13,7 +13,7 @@ import org.springframework.web.context.request.WebRequest;
 import org.springframework.web.servlet.ModelAndView;
 
 @Controller
-@RequestMapping("/kemao_3/library/debit")
+@RequestMapping("/ZYF/library/debit")
 @SessionAttributes(names = { "debitList" })
 public class DebitController {
 
@@ -43,7 +43,7 @@ public class DebitController {
 			request.setAttribute("debitList", list, WebRequest.SCOPE_SESSION);
 		}
 		libraryService.add(list, bookId);
-		mav.setViewName("redirect:/kemao_3/library/debit/list");
+		mav.setViewName("redirect:/ZYF/library/debit/list");
 		return mav;
 	}
 
@@ -54,6 +54,6 @@ public class DebitController {
 	@RequestMapping("remove/{id}")
 	public String remove(@PathVariable("id") String id, @SessionAttribute(name = "debitList") DebitList list) {
 		libraryService.remove(list, id);
-		return "redirect:/kemao_3/library/debit/list";
+		return "redirect:/ZYF/library/debit/list";
 	}
 }

@@ -1,4 +1,4 @@
-package org.fkjava.weixin.service;
+package org.ZYFjava.weixin.service;
 
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;

@@ -72,7 +72,7 @@ public interface EventListenerConfig extends CommandLineRunner, DisposableBean {
 			@Autowired RedisConnectionFactory connectionFactory) {
 		RedisMessageListenerContainer c = new RedisMessageListenerContainer();
 		c.setConnectionFactory(connectionFactory);
-		ChannelTopic topic = new ChannelTopic("kemao_3_event");
+		ChannelTopic topic = new ChannelTopic("ZYF_event");
 
 
 		
