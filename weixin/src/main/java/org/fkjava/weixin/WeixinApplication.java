@@ -29,5 +29,6 @@ public class WeixinApplication implements EventListenerConfig {
 
 	@Override
 	public void handleEvent(EventInMessage event) {
+		// 不需要处理事件，所以方法留空即可
 	}
 }

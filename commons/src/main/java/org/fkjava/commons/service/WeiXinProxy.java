@@ -19,6 +19,13 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+
+/**
+ * 微信的代理接口，所有跟微信服务器的主动通讯（我们请求微信），都通过此类里面的方法进行封装
+ * 
+ * @author lwq
+ *
+ */
 @Service
 public class WeiXinProxy {
 

@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
 		<groupId>org.fkjava</groupId>
-		<artifactId>wx_ZYF</artifactId>
+		<artifactId>wx_kemao_3</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 	<artifactId>weixin</artifactId>
@@ -93,7 +93,7 @@
 					<executable>true</executable>
 					<fork>true</fork>
 					<!-- 指定MBean端口，默认9001，每个程序使用一个端口号 -->
-					<jmxPort>9011</jmxPort>
+					<jmxPort>9001</jmxPort>
 				</configuration>
 			</plugin>
 		</plugins>

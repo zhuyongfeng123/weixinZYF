@@ -4,7 +4,7 @@ import org.fkjava.commons.domain.OutMessage;
 
 public class TextOutMessage extends OutMessage {
 
-	
+	// 内部类
 	public static class TextContent {
 		private String content;
 

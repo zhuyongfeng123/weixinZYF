@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
 		<groupId>org.fkjava</groupId>
-		<artifactId>wx_ZYF</artifactId>
+		<artifactId>wx_kemao_3</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 	<artifactId>unsubscribe</artifactId>
@@ -85,13 +85,11 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
-				
 				<configuration>
-				
 					<executable>true</executable>
 					<fork>true</fork>
 					<!-- JMX的端口不能重复 -->
-					<jmxPort>9013</jmxPort>
+					<jmxPort>9003</jmxPort>
 				</configuration>
 			</plugin>
 		</plugins>

@@ -9,8 +9,9 @@ import javax.xml.bind.annotation.XmlRootElement;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-@XmlRootElement(name = "xml") 
-@XmlAccessorType(XmlAccessType.FIELD) 
+// 接收到信息
+@XmlRootElement(name = "xml") // 指定XML的根元素名称
+@XmlAccessorType(XmlAccessType.FIELD) // 指定属性的访问方式为字段
 public abstract class InMessage implements Serializable {
 
 	/**
@@ -38,9 +39,11 @@ public abstract class InMessage implements Serializable {
 	@JsonProperty("MsgId")
 	private Long msgId;
 
+	// 抽象父类、非抽象类都必须有无参构造器
 	public InMessage() {
 	}
 
+	// 提供一个有参的构造器，要求必须有消息类型传入
 	protected InMessage(String type) {
 		this.msgType = type;
 	}
